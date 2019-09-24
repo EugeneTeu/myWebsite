@@ -2,7 +2,7 @@
   <v-app >
     <v-app-bar
      color="primary"
-     :hide-on-scroll="true" fixed app>
+      fixed app>
       <v-container >
         <v-row justify="space-around">
           <v-toolbar-title v-text="title" />
