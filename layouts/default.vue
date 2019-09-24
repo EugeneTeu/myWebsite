@@ -45,16 +45,6 @@ export default {
           title: "Welcome",
           to: "/"
         },
-        {
-          icon: "mdi-chart-bubble",
-          title: "Inspire",
-          to: "/inspire"
-        },
-        {
-          icon: "mdi-face",
-          title: "About Me",
-          to: "/aboutme"
-        }
       ],
       title: "Eugene Teu"
     };
