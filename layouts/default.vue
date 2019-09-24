@@ -8,11 +8,11 @@
           <v-toolbar-title v-text="title" />
           <v-btn rounded text to="/">
             <v-icon>mdi-face</v-icon>
-            <v-btn-text v-if="$vuetify.breakpoint.smAndUp">About Me</v-btn-text>
+            <v-text v-if="$vuetify.breakpoint.smAndUp">About Me</v-text>
           </v-btn>
           <v-btn rounded text to="/portfolio">
             <v-icon>mdi-file-chart</v-icon>
-            <v-btn-text v-if="$vuetify.breakpoint.smAndUp">Portfolio</v-btn-text>
+            <v-text v-if="$vuetify.breakpoint.smAndUp">Portfolio</v-text>
           </v-btn>
       </v-row>
       </v-container>

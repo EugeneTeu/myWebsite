@@ -24,79 +24,65 @@
         <v-divider class="mt-8 mb-4"></v-divider>
         <p class="display-2 font-italic font-weight-medium">Side Projects</p>
         <v-divider class="mt-2 mb-4"></v-divider>
-        <v-container>
-          <v-layout row>
-            <v-flex
-            sm12
-            md6>
-              <v-card
-              min-height="480"
 
-              fluid
-              hover
-              >
-                <v-list-item>
-                    <v-list-item-content>
-                      <v-list-item-title class="headline font-weight-bold" >{{projects[0].title}}</v-list-item-title>
-                      <v-list-item-subtitle  >{{projects[0].subtitle}}</v-list-item-subtitle>
-                    </v-list-item-content>
-                  </v-list-item>
+        <v-row justify="center">
+          <v-col sm=12 md=6 >
+          <v-card min-height="480" fluid hover>
+            <v-list-item>
+              <v-list-item-content>
+                <v-list-item-title class="headline font-weight-bold">{{projects[0].title}}</v-list-item-title>
+                <v-list-item-subtitle>{{projects[0].subtitle}}</v-list-item-subtitle>
+              </v-list-item-content>
+            </v-list-item>
 
-                <v-divider class="mt-4 mb-4"></v-divider>
-                <v-row justify="center"
-                  >
-                  <v-img  :src="require('../assets/homepage.png')" aspect-ratio="1" contain max-height="200"></v-img>
-                  <v-img  :src="require('../assets/loginscreen.png')" aspect-ratio="1" contain max-height="200"></v-img>
-                </v-row>
+            <v-divider class="mt-4 mb-4"></v-divider>
+            <v-row justify="center">
+              <v-img
+                :src="require('../assets/homepage.png')"
+                aspect-ratio="1"
+                contain
+                max-height="200"
+              ></v-img>
+              <v-img
+                :src="require('../assets/loginscreen.png')"
+                aspect-ratio="1"
+                contain
+                max-height="200"
+              ></v-img>
+            </v-row>
 
+            <v-card-text>{{ projects[0].writeup}}</v-card-text>
+            <v-card-actions>
+              <v-btn hover color="green" :href="projects[0].githublink" target="_blank">Github Repo</v-btn>
+            </v-card-actions>
+          </v-card>
+          </v-col>
+          <v-col sm=12 md=6>
+          <v-card min-height="480" fluid hover>
+            <v-list-item>
+              <v-list-item-content>
+                <v-list-item-title class="headline font-weight-bold">{{projects[1].title}}</v-list-item-title>
+                <v-list-item-subtitle>{{projects[1].subtitle}}</v-list-item-subtitle>
+              </v-list-item-content>
+            </v-list-item>
 
+            <v-divider class="mt-4 mb-4"></v-divider>
+            <v-row justify="center">
+              <v-img
+                :src="require('../assets/flutterHack.png')"
+                aspect-ratio="1"
+                contain
+                max-height="200"
+              ></v-img>
+            </v-row>
+            <v-card-text>{{ projects[1].writeup}}</v-card-text>
+            <v-card-actions>
+              <v-btn hover color="green" :href="projects[1].githublink" target="_blank">Github Repo</v-btn>
+            </v-card-actions>
+          </v-card>
+          </v-col>
+        </v-row>
 
-              <v-card-text>{{ projects[0].writeup}}</v-card-text>
-              <v-card-actions>
-              <v-btn
-              hover
-              color="green"
-              :href="projects[0].githublink"
-              target="_blank"
-              >Github Repo</v-btn>
-              </v-card-actions>
-              </v-card>
-              </v-flex>
-                <v-flex
-                sm12
-                md6>
-                <v-card
-              min-height="480"
-
-              fluid
-              hover
-              >
-                <v-list-item>
-                    <v-list-item-content>
-                      <v-list-item-title class="headline font-weight-bold" >{{projects[1].title}}</v-list-item-title>
-                      <v-list-item-subtitle  >{{projects[1].subtitle}}</v-list-item-subtitle>
-                    </v-list-item-content>
-                  </v-list-item>
-
-                <v-divider class="mt-4 mb-4"></v-divider>
-                <v-row justify="center"
-                  >
-                  <v-img  :src="require('../assets/flutterHack.png')" aspect-ratio="1" contain max-height="200"></v-img>
-                </v-row>
-              <v-card-text>{{ projects[1].writeup}}</v-card-text>
-              <v-card-actions>
-              <v-btn
-              hover
-              color="green"
-              :href="projects[1].githublink"
-              target="_blank"
-              >Github Repo</v-btn>
-              </v-card-actions>
-              </v-card>
-
-            </v-flex>
-          </v-layout>
-        </v-container>
         <v-divider class="mt-4 mb-4"></v-divider>
         <p class="display-2 font-italic font-weight-medium">Hackathon Experiences</p>
         <v-divider class="mt-2 mb-4"></v-divider>
@@ -105,15 +91,18 @@
             <v-expansion-panel-header :ripple="true" class="font-weight-bold">{{ info.title }}</v-expansion-panel-header>
             <v-expansion-panel-content :eager="true">
               <v-col v-if="info.index == 0">
-              <v-img  :src="require('../assets/yitu.png')" contain height="250"></v-img>
-              <v-divider class="mt-4 mb-4"></v-divider>
+                <v-img :src="require('../assets/yitu.png')" contain height="250"></v-img>
+                <v-divider class="mt-4 mb-4"></v-divider>
               </v-col>
               {{info.writeup}}
-              <v-btn v-if="info.index == 1" hover
-              color="green"
-              :href="info.githublink"
-              target="_blank">Github repo</v-btn>
-              </v-expansion-panel-content>
+              <v-btn
+                v-if="info.index == 1"
+                hover
+                color="green"
+                :href="info.githublink"
+                target="_blank"
+              >Github repo</v-btn>
+            </v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
       </v-flex>
@@ -130,7 +119,8 @@ export default {
       projects: [
         {
           title: "BrewCompass",
-          subtitle: "Mobile App using Flutter framework with Firebase as back-end ",
+          subtitle:
+            "Mobile App using Flutter framework with Firebase as back-end ",
 
           src: "../assets/loginscreen.png",
           writeup:
