@@ -10,6 +10,10 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 
 export default {
   mode: 'universal',
+  router: {
+    base: '/myWebsite/',
+    
+  },
   /*
   ** Headers of the page
   */
@@ -52,7 +56,7 @@ export default {
   */
   modules: [
   ],
-  ...routerBase,
+  
   /*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
