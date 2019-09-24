@@ -49,7 +49,7 @@
           </v-list>
           <v-card-title>Customer Mangement</v-card-title>
           <v-list>
-            <v-list-item v-for="(index) in  Customer" :key="index">
+            <v-list-item v-for="index,i in  Customer" :key="i">
               <v-list-item-content>
                 <v-list-item-title v-text="index.cms"></v-list-item-title>
               </v-list-item-content>
@@ -61,7 +61,7 @@
         <v-card class="mt-2 mr-2 ml-2 mb-2" min-width="300" hover>
           <v-card-title>Articles I have written</v-card-title>
           <v-list>
-            <v-list-item v-for="(index) in  ArticlesWritten" :key="index">
+            <v-list-item v-for="index,i in  ArticlesWritten" :key="i">
               <v-list-item-content>
                 <v-list-item-title class="text-wrap" v-text="index.article"></v-list-item-title>
               </v-list-item-content>
@@ -85,7 +85,7 @@
       <v-row justify="center">
         <p class="ma-2 display-3 font-italic font-weight-bold">My Experience</p>
         <v-card hover>
-          <v-list-item v-for="index in WorkExperience" :key="index">
+          <v-list-item v-for="index,i in WorkExperience" :key="i">
             <v-list-item-content>
               <v-list-item-title>{{index.job}}</v-list-item-title>
               <v-list-item-subtitle v-if="index.companyName">Company: {{ index.companyName}}</v-list-item-subtitle>
@@ -106,8 +106,8 @@
         <v-btn
          hover
         class = "ma-4 text-black"
-        v-for="index in contact"
-        :key=index
+        v-for="index,i in contact"
+        :key=i
         color="green"
     
         :href="index.link"
