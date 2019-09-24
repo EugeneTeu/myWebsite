@@ -52,6 +52,7 @@ export default {
   */
   modules: [
   ],
+  ...routerBase,
   /*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
