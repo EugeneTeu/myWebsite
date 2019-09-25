@@ -69,7 +69,7 @@
 
               <v-btn
               hover
-              color="green"
+              color="button"
               :href="index.link"
               target="_blank"
               >View </v-btn>
@@ -108,7 +108,7 @@
         class = "ma-4 text-black"
         v-for="index in contact"
         :key=index
-        color="green"
+        color="button"
 
         :href="index.link"
         target="_blank"

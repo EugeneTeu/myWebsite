@@ -3,7 +3,7 @@ import colors from 'vuetify/es5/util/colors'
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
     base: '/myWebsite/',
-    
+
   }
 } : {}
 
@@ -12,7 +12,7 @@ export default {
   mode: 'spa',
   router: {
     base: '/myWebsite/',
-    
+
   },
   /*
   ** Headers of the page
@@ -56,7 +56,7 @@ export default {
   */
   modules: [
   ],
-  
+
   /*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
@@ -67,7 +67,8 @@ export default {
       light: true,
       themes: {
         light: {
-          primary: colors.blueGrey.lighten4,
+          primary: colors.blue.lighten2,
+          button: colors.green.lighten3,
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
           info: colors.teal.lighten1,

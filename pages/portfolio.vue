@@ -53,7 +53,7 @@
 
             <v-card-text>{{ projects[0].writeup}}</v-card-text>
             <v-card-actions>
-              <v-btn hover color="green" :href="projects[0].githublink" target="_blank">Github Repo</v-btn>
+              <v-btn hover color="button" :href="projects[0].githublink" target="_blank">Github Repo</v-btn>
             </v-card-actions>
           </v-card>
           </v-col>
@@ -77,7 +77,7 @@
             </v-row>
             <v-card-text>{{ projects[1].writeup}}</v-card-text>
             <v-card-actions>
-              <v-btn hover color="green" :href="projects[1].githublink" target="_blank">Github Repo</v-btn>
+              <v-btn hover color="button" :href="projects[1].githublink" target="_blank">Github Repo</v-btn>
             </v-card-actions>
           </v-card>
           </v-col>
@@ -98,7 +98,7 @@
               <v-btn
                 v-if="info.index == 1"
                 hover
-                color="green"
+                color="button"
                 :href="info.githublink"
                 target="_blank"
               >Github repo</v-btn>
