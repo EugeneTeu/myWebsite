@@ -2,7 +2,7 @@
   <v-app >
     <v-app-bar
      color="primary"
-      fixed app>
+      fixed app light>
       <v-container >
         <v-row justify="space-around">
           <v-toolbar-title v-text="title" />
@@ -17,8 +17,8 @@
       </v-row>
       </v-container>
     </v-app-bar>
-    <v-content class="pa-0">
-      <v-container class="mt-12 pt-12 pb-12 mb-12" >
+    <v-content class="bg grey lighten-4 pa-0">
+      <v-container class=" mt-12 pt-12 pb-12 mb-12" >
         <nuxt />
       </v-container >
     </v-content>

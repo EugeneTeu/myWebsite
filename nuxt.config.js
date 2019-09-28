@@ -67,6 +67,7 @@ export default {
       light: true,
       themes: {
         light: {
+
           primary: colors.blue.lighten2,
           button: colors.green.lighten3,
           accent: colors.grey.darken3,
@@ -74,7 +75,8 @@ export default {
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3
+          success: colors.green.accent3,
+
         },
 
       }

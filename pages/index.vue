@@ -1,18 +1,20 @@
 <template>
   <v-layout column justify-center align-center>
-    <v-flex xs12 sm12 md12>
+    <v-flex xs12 sm12 md6 lg6 xl6>
+
+
       <v-row justify="center">
         <p class="display-3 font-italic font-weight-bold">Welcome</p>
       </v-row>
       <v-row justify="center">
-        <p class=" ma-4  subtitle-1 font-italic font-weight-light">
+        <p class=" ma-4  subtitle-1 font-weight-light text-center">
           My name is Eugene Teu and I am currently a year 2 Computer Science Undergraduate @ National University of Singapore. My focus area of study includes Software Engineering and Programming languges.
           I aspire to use my knowledge and skills to build things that will have leave an impact on society in the future.
         </p>
       </v-row>
       <v-divider class="mt-4 mb-4"></v-divider>
       <p
-        class="subtitle-2 font-weight-light"
+        class="subtitle-2 font-weight-light text-center"
       >This website was build using VueJs, VuetifyJs and Nuxtjs frameworks. Not only will this serves as my portfolio website, it is a playground for me to explore web development</p>
       <v-row justify="center">
         <p class="display-3 font-italic font-weight-bold">My Skills</p>
@@ -24,11 +26,11 @@
       </v-row>
       <v-row justify="center">
         <p
-          class="ml-4 mr-4 subtitle-1 font-italic font-weight-light"
+          class="ml-4 mr-4 subtitle-1 font-weight-light"
         >The following are my current skills. I have a strong focus in both App and Web development</p>
       </v-row>
       <v-row justify="center">
-        <v-card class="mt-2 mr-2 ml-2 mb-2" min-width="300" hover>
+        <v-card class="mt-2 mr-2 ml-2 mb-2" min-width="300" >
           <v-card-title>Languages</v-card-title>
           <v-list>
             <v-list-item v-for="(index) in  languages" :key="index">
@@ -38,7 +40,7 @@
             </v-list-item>
           </v-list>
         </v-card>
-        <v-card class="mt-2 ml-2 mr-2 mb-2" min-width="300" hover>
+        <v-card class="mt-2 ml-2 mr-2 mb-2" min-width="300" >
           <v-card-title>Frameworks</v-card-title>
           <v-list>
             <v-list-item v-for="(index) in  Frameworks" :key="index">
@@ -58,7 +60,7 @@
         </v-card>
       </v-row>
          <v-row justify="center">
-        <v-card class="mt-2 mr-2 ml-2 mb-2" min-width="300" hover>
+        <v-card class="mt-2 mr-2 ml-2 mb-2" min-width="300" >
           <v-card-title>Articles I have written</v-card-title>
           <v-list>
             <v-list-item v-for="index in  ArticlesWritten" :key="index">
@@ -84,7 +86,7 @@
 
       <v-row justify="center">
         <p class="ma-2 display-3 font-italic font-weight-bold">My Experience</p>
-        <v-card hover>
+        <v-card >
           <v-list-item v-for="index in WorkExperience" :key="index">
             <v-list-item-content>
               <v-list-item-title>{{index.job}}</v-list-item-title>

@@ -1,13 +1,13 @@
 <template>
-  <v-container grid-list-md text-xs-center>
+  <v-container grid-list-sm text-xs-center>
     <v-layout column>
       <v-flex xs12 sm8 md12 class="text-center">
         <p class="display-3 font-italic font-weight-bold">My Portfolio</p>
         <p
-          class="subtitle-1 font-italic font-weight-light"
+          class="subtitle-1 font-weight-light text-center"
         >I enjoy creating things in my spare time and participating in hackathons!</p>
         <p
-          class="subtitle-1 font-italic font-weight-light"
+          class="subtitle-1  font-weight-light"
         >The following are some stuff that I have completed!</p>
         <v-row justify="center">
           <div class="text-center mr-4 ml-4">
@@ -23,8 +23,6 @@
         </v-row>
         <v-divider class="mt-8 mb-4"></v-divider>
         <p class="display-2 font-italic font-weight-medium">Side Projects</p>
-        <v-divider class="mt-2 mb-4"></v-divider>
-
         <v-row justify="center">
           <v-col sm=12 md=6 >
           <v-card min-height="480" fluid hover>
@@ -85,7 +83,6 @@
 
         <v-divider class="mt-4 mb-4"></v-divider>
         <p class="display-2 font-italic font-weight-medium">Hackathon Experiences</p>
-        <v-divider class="mt-2 mb-4"></v-divider>
         <v-expansion-panels :multiple="true" :inset="true">
           <v-expansion-panel v-for="(info) in hackathons" :key="info.index">
             <v-expansion-panel-header :ripple="true" class="font-weight-bold">{{ info.title }}</v-expansion-panel-header>
