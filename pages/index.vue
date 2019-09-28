@@ -85,7 +85,7 @@
       <v-divider class="mt-2 mb-4"></v-divider>
 
       <v-row justify="center">
-        <p class="ma-2 display-3 font-italic font-weight-bold">My Experience</p>
+        <p class="ma-2 display-3 font-italic font-weight-bold text-center">My Experience</p>
         <v-card >
           <v-list-item v-for="index in WorkExperience" :key="index">
             <v-list-item-content>
@@ -102,7 +102,7 @@
 
       <v-divider class="mt-4 mb-4"></v-divider>
       <v-row justify="center">
-        <p class=" ma-2 display-3 font-italic font-weight-bold">Contact Me</p>
+        <p class=" ma-2 display-3 font-italic font-weight-bold text-center">Contact Me</p>
       </v-row>
       <v-row justify="center">
         <v-btn
