@@ -6,9 +6,7 @@
         <p
           class="subtitle-1 font-weight-light text-center"
         >I enjoy creating things in my spare time and participating in hackathons!</p>
-        <p
-          class="subtitle-1  font-weight-light"
-        >The following are some stuff that I have completed!</p>
+        <p class="subtitle-1 font-weight-light">The following are some stuff that I have completed!</p>
         <v-row justify="center">
           <div class="text-center mr-4 ml-4">
             <v-avatar size="55">
@@ -24,60 +22,70 @@
         <v-divider class="mt-8 mb-4"></v-divider>
         <p class="display-2 font-italic font-weight-medium">Side Projects</p>
         <v-row justify="center">
-          <v-col sm=12 md=6 >
-          <v-card min-height="480" fluid hover>
-            <v-list-item>
-              <v-list-item-content>
-                <v-list-item-title class="headline font-weight-bold">{{projects[0].title}}</v-list-item-title>
-                <v-list-item-subtitle>{{projects[0].subtitle}}</v-list-item-subtitle>
-              </v-list-item-content>
-            </v-list-item>
+          <v-col sm="12" md="6">
+            <v-card min-height="480" fluid hover>
+              <v-list-item>
+                <v-list-item-content>
+                  <v-list-item-title class="headline font-weight-bold">{{projects[0].title}}</v-list-item-title>
+                  <v-list-item-subtitle>{{projects[0].subtitle}}</v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
 
-            <v-divider class="mt-4 mb-4"></v-divider>
-            <v-row justify="center">
-              <v-img
-                :src="require('../assets/homepage.png')"
-                aspect-ratio="1"
-                contain
-                max-height="200"
-              ></v-img>
-              <v-img
-                :src="require('../assets/loginscreen.png')"
-                aspect-ratio="1"
-                contain
-                max-height="200"
-              ></v-img>
-            </v-row>
+              <v-divider class="mt-4 mb-4"></v-divider>
+              <v-row justify="center">
+                <v-img
+                  :src="require('../assets/homepage.png')"
+                  aspect-ratio="1"
+                  contain
+                  max-height="200"
+                ></v-img>
+                <v-img
+                  :src="require('../assets/loginscreen.png')"
+                  aspect-ratio="1"
+                  contain
+                  max-height="200"
+                ></v-img>
+              </v-row>
 
-            <v-card-text>{{ projects[0].writeup}}</v-card-text>
-            <v-card-actions>
-              <v-btn hover color="button" :href="projects[0].githublink" target="_blank">Github Repo</v-btn>
-            </v-card-actions>
-          </v-card>
+              <v-card-text>{{ projects[0].writeup}}</v-card-text>
+              <v-card-actions>
+                <v-btn
+                  hover
+                  color="button"
+                  :href="projects[0].githublink"
+                  target="_blank"
+                >Github Repo</v-btn>
+              </v-card-actions>
+            </v-card>
           </v-col>
-          <v-col sm=12 md=6>
-          <v-card min-height="480" fluid hover>
-            <v-list-item>
-              <v-list-item-content>
-                <v-list-item-title class="headline font-weight-bold">{{projects[1].title}}</v-list-item-title>
-                <v-list-item-subtitle>{{projects[1].subtitle}}</v-list-item-subtitle>
-              </v-list-item-content>
-            </v-list-item>
+          <v-col sm="12" md="6">
+            <v-card min-height="480" fluid hover>
+              <v-list-item>
+                <v-list-item-content>
+                  <v-list-item-title class="headline font-weight-bold">{{projects[1].title}}</v-list-item-title>
+                  <v-list-item-subtitle>{{projects[1].subtitle}}</v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
 
-            <v-divider class="mt-4 mb-4"></v-divider>
-            <v-row justify="center">
-              <v-img
-                :src="require('../assets/flutterHack.png')"
-                aspect-ratio="1"
-                contain
-                max-height="200"
-              ></v-img>
-            </v-row>
-            <v-card-text>{{ projects[1].writeup}}</v-card-text>
-            <v-card-actions>
-              <v-btn hover color="button" :href="projects[1].githublink" target="_blank">Github Repo</v-btn>
-            </v-card-actions>
-          </v-card>
+              <v-divider class="mt-4 mb-4"></v-divider>
+              <v-row justify="center">
+                <v-img
+                  :src="require('../assets/flutterHack.png')"
+                  aspect-ratio="1"
+                  contain
+                  max-height="200"
+                ></v-img>
+              </v-row>
+              <v-card-text>{{ projects[1].writeup}}</v-card-text>
+              <v-card-actions>
+                <v-btn
+                  hover
+                  color="button"
+                  :href="projects[1].githublink"
+                  target="_blank"
+                >Github Repo</v-btn>
+              </v-card-actions>
+            </v-card>
           </v-col>
         </v-row>
 
@@ -116,8 +124,7 @@ export default {
       projects: [
         {
           title: "BrewCompass",
-          subtitle:
-            "Mobile App using Flutter framework with Firebase as back-end ",
+          subtitle: "Mobile App using Flutter and Firebase",
 
           src: "../assets/loginscreen.png",
           writeup:
@@ -127,9 +134,9 @@ export default {
         },
         {
           title: "FlutterFly",
-          subtitle: "Third Place at Singapore Flutter Hackathon 2019",
+          subtitle: "Sg Flutter Hackathon 2019",
           writeup:
-            "Trex clone centered around flutter community. Submission for International Flutter Hackathon (Singapore leg) ",
+            "Came in Third Place at the Hackathon. Trex clone centered around flutter community. Submission for International Flutter Hackathon (Singapore leg) ",
           githublink: "https://github.com/EugeneTeu/FlutterFly"
         }
       ],
